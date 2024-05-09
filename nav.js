@@ -376,9 +376,12 @@ locationSelect.addEventListener("change", function() {
 
         // Check if the selected location needs additional legends
         if (selectedLocation === "STEM - St. Augustine of Hippo" || selectedLocation === "STEM - St. Thomas Aquinas" || selectedLocation === "STEM - St. Albert the Great") {
-            legendsSection.innerHTML += `<div class="legend-item"><img src="images/legends/extra-legend.jpg" alt="extra-legend"><p>Additional Legend</p></div>`;
+            legendsSection.innerHTML += `<p>Note: Use the orange path during poor weather conditions.</p>`;
         }
-        if (selectedLocation === "STEM - St. Maria Goretti" || selectedLocation === "St. Thomas Aquinas") {
+        if (selectedLocation === "HUMSS - St. Joseph Marello " || selectedLocation === "ABM - St. John Paul II" || selectedLocation === "TVL - St. Joseph the Worker") {
+            legendsSection.innerHTML += `<p>Note: Use the yellow path during poor weather conditions.</p>`;
+        }
+        if (selectedLocation === "STEM - St. Maria Goretti" || selectedLocation === "STEM - St. Claire of Assisi" || selectedLocation === "STEM - St. Rita or Cascia" || selectedLocation === "ABM - St. Theresa of Calcutta" || selectedLocation === "TVL - St. Bridgette" || selectedLocation === "HUMSS - St. Catherine of Sienna") {
             legendsSection.innerHTML += `<p>Note: Use the yellow path during poor weather conditions.</p>`;
         }
 
